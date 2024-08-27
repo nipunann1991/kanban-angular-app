@@ -1,0 +1,25 @@
+
+
+$default-font-color: #545454;
+$red: #dc0808;
+$gray-e5: #e5e5e5;
+$gray-eb: #ebebeb;
+$gray-f5: #f5f5f5;
+$gray-b2: #b2b2b2;
+$white: #ffffff;
+ 
+$kanban-status:(
+    'todo': #ff6a60,
+    'implementing': #ffb112,
+    'done': #00b381
+);
+
+$breakpoints: (
+    'sm-device': 320px, 
+    'md-device': 480px, 
+    'sm-tablet': 768px,   
+    'lg-tablet': 1024px,   
+    'sm-desktop': 1200px,
+    'md-desktop': 1440px,
+    'lg-desktop': 1600px
+);

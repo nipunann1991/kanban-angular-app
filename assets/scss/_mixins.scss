@@ -1,0 +1,33 @@
+
+@mixin breakpoint($breakpoint) { 
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)) { 
+        @content;
+    }
+}
+
+@mixin kanban-status-theme($status) {
+    &.bg-color {
+      background: map-get($kanban-status, $status);
+    }
+    &.border-color {
+      border-left-color: map-get($kanban-status, $status);
+    }
+}
+
+@mixin flex-box($direction: row, $justify: flex-start, $align: stretch) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin transition($property: all, $duration: 0.3s, $timing-function: ease, $delay: 0s) {
+    transition: $property $duration $timing-function $delay;
+}
+
+@mixin box-shadow($x: 0px, $y: 0px, $blur: 10px, $spread: 0px, $color: rgba(0, 0, 0, 0.15)) {
+    -webkit-box-shadow: $x $y $blur $spread $color;
+    -moz-box-shadow: $x $y $blur $spread $color;
+    -o-box-shadow: $x $y $blur $spread $color;
+    box-shadow: $x $y $blur $spread $color;
+}
